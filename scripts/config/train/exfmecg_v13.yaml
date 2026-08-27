@@ -1,0 +1,31 @@
+model:
+  arch: exfmecg_v13
+  model_type: v13
+  concept_matrix_root: ${oc.env:EXFMECG_CONCEPT_MATRIX_ROOT}
+
+datasets:
+  exfmecg:
+    train_manifest: ${oc.env:EXFMECG_TRAIN_MANIFEST}
+    ecg_root: ${oc.env:EXFMECG_ECG_ROOT,.}
+
+run:
+  task: exfmecg_training
+  runner: runner_base
+  lr_sched: linear_warmup_cosine_lr
+  init_lr: 5.0e-5
+  min_lr: 5.0e-6
+  warmup_lr: 1.0e-6
+  warmup_steps: 2000
+  weight_decay: 0.05
+  max_epoch: 10
+  batch_size_train: 192
+  num_workers: 0
+  seed: 42
+  output_dir: output/exfmecg
+  amp: true
+  resume_ckpt_path: null
+  device: cuda
+  world_size: 1
+  dist_url: env://
+  distributed: true
+  find_unused_parameters: false

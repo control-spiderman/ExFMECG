@@ -1,0 +1,42 @@
+model:
+  arch: exfmecg_v13
+  load_pretrained: false
+  load_finetuned: false
+  mode: train
+
+  asset_root: assets
+  bert_model_name: emilyalsentzer/Bio_ClinicalBERT
+  max_txt_len: 16
+  report_max_length: 128
+  freeze_layers: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  unfreeze_layers: [9, 10, 11]
+  freeze_vit: false
+  freeze_knowledge: false
+  embed_dim: 512
+  tqn_model_layers: 12
+  output_type: total
+
+  v6_num_concepts: 570
+  label_concept_runtime: assets/concepts/label_concept_runtime.json
+  label_neg_default_dts: [2, 4, 5, 6]
+  use_renji_tasks: true
+  concept_loss_type: bce
+  concept_w_bin: 4.0
+  concept_w_reg: 1.0
+  concept_w_cat: 0.4
+  concept_loss_weight: 200.0
+  orth_loss_weight: 0.0
+  clip_loss_weight: 1.0
+  freeze_unused_params: true
+
+  concept_routing:
+    2: [sfp, study_id]
+    4: [renji, study_id]
+    5: [heedb, study_id]
+    6: [heedb, study_id]
+    10: [mimic, study_id]
+    11: [mimic, study_id]
+    35: [mimic, study_id]
+    40: [heedb, study_id]
+    61: [renji, study_id]
+    161: [heedb, study_id]

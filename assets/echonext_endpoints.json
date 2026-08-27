@@ -1,0 +1,62 @@
+[
+  {
+    "flag": "lvef_lte_45_flag",
+    "name": "Left ventricular systolic dysfunction",
+    "zero_shot_prompt": "diagnosed with Left ventricular systolic dysfunction at discharge"
+  },
+  {
+    "flag": "lvwt_gte_13_flag",
+    "name": "Left ventricular hypertrophy",
+    "zero_shot_prompt": "diagnosed with Left ventricular hypertrophy at discharge"
+  },
+  {
+    "flag": "aortic_stenosis_moderate_or_greater_flag",
+    "name": "Aortic valve stenosis",
+    "zero_shot_prompt": "diagnosed with Aortic valve stenosis at discharge"
+  },
+  {
+    "flag": "aortic_regurgitation_moderate_or_greater_flag",
+    "name": "Aortic valve regurgitation",
+    "zero_shot_prompt": "diagnosed with Aortic valve regurgitation at discharge"
+  },
+  {
+    "flag": "mitral_regurgitation_moderate_or_greater_flag",
+    "name": "Mitral valve regurgitation",
+    "zero_shot_prompt": "diagnosed with Mitral valve regurgitation at discharge"
+  },
+  {
+    "flag": "tricuspid_regurgitation_moderate_or_greater_flag",
+    "name": "Tricuspid valve regurgitation",
+    "zero_shot_prompt": "diagnosed with Tricuspid valve regurgitation at discharge"
+  },
+  {
+    "flag": "pulmonary_regurgitation_moderate_or_greater_flag",
+    "name": "Pulmonary valve regurgitation",
+    "zero_shot_prompt": "diagnosed with Pulmonary valve regurgitation at discharge"
+  },
+  {
+    "flag": "rv_systolic_dysfunction_moderate_or_greater_flag",
+    "name": "Right ventricular dysfunction",
+    "zero_shot_prompt": "diagnosed with Right ventricular dysfunction at discharge"
+  },
+  {
+    "flag": "pericardial_effusion_moderate_large_flag",
+    "name": "Pericardial effusion",
+    "zero_shot_prompt": "diagnosed with Pericardial effusion at discharge"
+  },
+  {
+    "flag": "pasp_gte_45_flag",
+    "name": "Pulmonary hypertension",
+    "zero_shot_prompt": "diagnosed with Pulmonary hypertension at discharge"
+  },
+  {
+    "flag": "tr_max_gte_32_flag",
+    "name": "Tricuspid regurgitation jet velocity at least 3.2 m/s",
+    "zero_shot_prompt": "diagnosed with Tricuspid regurgitation jet velocity at least 3.2 m/s at discharge"
+  },
+  {
+    "flag": "shd_moderate_or_greater_flag",
+    "name": "Structural heart disease",
+    "zero_shot_prompt": "diagnosed with Structural heart disease at discharge"
+  }
+]

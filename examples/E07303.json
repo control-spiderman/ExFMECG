@@ -1,0 +1,29 @@
+{
+  "record_id": "E07303",
+  "dataset": "Georgia 12-lead ECG Challenge Database",
+  "source_release": "PhysioNet/Computing in Cardiology Challenge 2020, version 1.0.2",
+  "source_url": "https://physionet.org/content/challenge-2020/1.0.2/training/georgia/g8/",
+  "license": "Creative Commons Attribution 4.0 International",
+  "age": 81,
+  "sex": "female",
+  "sampling_rate_hz": 500,
+  "duration_seconds": 10,
+  "lead_order": [
+    "I",
+    "II",
+    "III",
+    "aVR",
+    "aVL",
+    "aVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "diagnosis_snomed_ct": ["164889003"],
+  "diagnosis": ["atrial fibrillation"],
+  "processed_array": "E07303.npy",
+  "processed_shape": [12, 1024]
+}
